@@ -17,7 +17,7 @@ This project focuses on clean UI design, performance, responsiveness, and scalab
 
 ## 🚀 Live Demo
 
-🔗 **Live Site:** []()
+🔗 **Live Site:** [https://portfolionextjs-01.netlify.app/](https://portfolionextjs-01.netlify.app/)
 📂 **Repository:** [https://github.com/tenthin/portfolio-next.git](https://github.com/tenthin/portfolio-next.git)
 
 ---

@@ -37,6 +37,14 @@ const projects: Project[] = [
     github: "https://github.com/tenthin/youtube-analyzer",
     livesite: "https://youtube-analyzer-01.netlify.app/",
   },
+  {
+    id: 4,
+    title: "Portfolio Site",
+    difficulty: "Medium",
+    img: "/portfolio.png",
+    github: "https://github.com/tenthin/portfolio-next",
+    livesite: "https://portfolionextjs-01.netlify.app/",
+  },
 ];
 
 const Projects = () => {
