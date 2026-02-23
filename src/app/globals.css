@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
+/* enable class dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* =====================
+   LIGHT THEME
+===================== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #fffdfd;
+  --surface: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --cta: #16A34A;
+  --border: #E2E8F0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* =====================
+   DARK THEME
+===================== */
+.dark {
+  --bg: #000000;
+  --surface: #152244;
+  --text-primary: #E5E7EB;
+  --text-secondary: #9CA3AF;
+  --cta: #22C55E;
+  --border: #4b4848;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* =====================
+   GLOBAL APPLICATION
+===================== */
 
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* smoother theme transition everywhere */
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }

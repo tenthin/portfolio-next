@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Perfect 👍
+A **good README** is extremely important — recruiters often open GitHub **before** running your live site.
 
-## Getting Started
+Below is a **professional README** tailored for your Next.js + TypeScript portfolio.
 
-First, run the development server:
+You can copy-paste and slightly edit.
+
+---
+
+# 🌐 Developer Portfolio – Tenzin Thinley
+
+A modern developer portfolio built using **Next.js**, **TypeScript**, and **Tailwind CSS**, showcasing my frontend projects, technical skills, and development journey.
+
+This project focuses on clean UI design, performance, responsiveness, and scalable component architecture.
+
+---
+
+## 🚀 Live Demo
+
+🔗 **Live Site:** []()
+📂 **Repository:** [https://github.com/tenthin/portfolio-next.git](https://github.com/tenthin/portfolio-next.git)
+
+---
+
+## 🧠 About The Project
+
+This portfolio was rebuilt using **Next.js App Router** to learn modern React architecture while creating a production-ready personal website.
+
+The goal was not only to display projects but also to practice:
+
+* Server vs Client Components
+* TypeScript integration
+* Responsive design systems
+* Theme management
+* Performance optimization
+* Real-world frontend structure
+
+---
+
+## ✨ Features
+
+✅ Dark / Light theme toggle
+✅ Fully responsive layout (mobile → desktop)
+✅ Scroll-aware navigation (active section highlight)
+✅ Optimized images using `next/image`
+✅ Component-based architecture
+✅ Smooth user experience
+
+---
+
+## 🛠️ Tech Stack
+
+* **Next.js (App Router)**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+│
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+│
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Projects.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
+│   └── ui/
+│       └── Card.tsx
+```
+
+---
+
+## 🎯 Key Learning Outcomes
+
+* Migrated a React portfolio to **Next.js + TypeScript**
+* Implemented theme switching using CSS variables
+* Built reusable UI components
+* Managed hydration and client/server rendering behavior
+* Implemented scroll spy navigation using Intersection Observer
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/tenthin/portfolio-next.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📌 Future Improvements
 
-To learn more about Next.js, take a look at the following resources:
+* Blog section
+* Project filtering animations
+* Accessibility improvements
+* Performance audits
+* CMS integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👨‍💻 Author
 
-## Deploy on Vercel
+**Tenzin Thinley**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* GitHub: [https://github.com/tenthin](https://github.com/tenthin)
+* LinkedIn: [https://www.linkedin.com/in/tenzinthinley01/](https://www.linkedin.com/in/tenzinthinley01/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+⭐ If you like this project, feel free to star the repository!
+
+---
