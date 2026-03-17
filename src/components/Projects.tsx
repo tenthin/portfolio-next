@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import Card from "@/components/ui/Card";
 
 type Project = {
   id: number;
   title: string;
-  difficulty: string;
+  description: string;
+  tech: string[];
   img?: string;
   github: string;
   livesite: string;
@@ -16,7 +16,9 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Expense Tracker",
-    difficulty: "Easy",
+    description:
+      "A personal finance app to log income and expenses, track spending by category, and visualize monthly summaries.",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/tenthin/expenseTracker",
     livesite: "https://expensetrack01.netlify.app/",
     img: "/expensetracker.png",
@@ -24,7 +26,9 @@ const projects: Project[] = [
   {
     id: 2,
     title: "Weather App",
-    difficulty: "Medium",
+    description:
+      "Real-time weather forecasts by city using the OpenWeather API. Handles loading states, error messages, and dynamic UI updates.",
+    tech: ["React", "TypeScript", "REST API", "Tailwind CSS"],
     img: "/weatherapp.png",
     github: "https://github.com/tenthin/WeatherApp",
     livesite: "https://weather-forecast-app01.netlify.app/",
@@ -32,7 +36,9 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Youtube Analyzer",
-    difficulty: "Difficult",
+    description:
+      "Analyzes YouTube videos by fetching metadata, transcripts, and engagement data — then surfaces key insights using AI summarization.",
+    tech: ["React", "TypeScript", "YouTube API", "AI Integration", "Next.js"],
     img: "/youtubeanalyzer.png",
     github: "https://github.com/tenthin/youtube-analyzer",
     livesite: "https://youtube-analyzer-01.netlify.app/",
@@ -40,7 +46,9 @@ const projects: Project[] = [
   {
     id: 4,
     title: "Portfolio Site",
-    difficulty: "Medium",
+    description:
+      "This portfolio — built with Next.js App Router and TypeScript. Features dark/light theming, responsive layout, and optimized images.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Netlify"],
     img: "/portfolio.png",
     github: "https://github.com/tenthin/portfolio-next",
     livesite: "https://portfolionextjs-01.netlify.app/",
@@ -48,76 +56,24 @@ const projects: Project[] = [
 ];
 
 const Projects = () => {
-  const [filter, setFilter] = useState<string>("all");
-
-  const filteredProjects =
-    filter === "all"
-      ? projects
-      : projects.filter((p) => p.difficulty === filter);
-
   return (
-    <section
-      id="projects"
-      className="pb-20 w-4/5 m-auto scroll-mt-28"
-    >
+    <section id="projects" className="pb-20 w-4/5 m-auto scroll-mt-28">
       {/* Header */}
       <div className="flex items-center gap-4">
-
-        <h1 className="
-  text-4xl md:text-6xl
-  w-full lg:w-auto
-  text-center
-
-  p-6
-">
+        <h1 className="text-4xl md:text-6xl w-full lg:w-auto text-center p-6">
           Projects
         </h1>
-
-        <p
-          className="
-          mt-4 text-xl flex-[1.4]
-          text-[var(--text-secondary)]
-          border border-[var(--border)]
-          bg-[var(--bg)]
-          p-4
-          transition-colors
-        "
-        />
-      </div>
-
-      {/* Filter */}
-      <div className="flex justify-end items-center mt-6">
-        <span className="mr-2 text-[var(--text-secondary)]">
-          Filter:
-        </span>
-
-        <select
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-          className="
-            border border-[var(--border)]
-            bg-[var(--surface)]
-            text-[var(--text-primary)]
-            px-4 py-2
-            rounded-lg
-            transition-colors
-          "
-        >
-          <option value="all">All</option>
-          <option value="Easy">Easy</option>
-          <option value="Medium">Medium</option>
-          <option value="Difficult">Difficult</option>
-        </select>
       </div>
 
       {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
-        {filteredProjects.map((project) => (
+        {projects.map((project) => (
           <Card
             key={project.id}
             title={project.title}
+            description={project.description}
+            tech={project.tech}
             img={project.img ?? ""}
-            difficulty={project.difficulty}
             github={project.github}
             livesite={project.livesite}
           />
