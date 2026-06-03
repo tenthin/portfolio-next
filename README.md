@@ -1,12 +1,3 @@
-Perfect 👍
-A **good README** is extremely important — recruiters often open GitHub **before** running your live site.
-
-Below is a **professional README** tailored for your Next.js + TypeScript portfolio.
-
-You can copy-paste and slightly edit.
-
----
-
 # 🌐 Developer Portfolio – Tenzin Thinley
 
 A modern developer portfolio built using **Next.js**, **TypeScript**, and **Tailwind CSS**, showcasing my frontend projects, technical skills, and development journey.
